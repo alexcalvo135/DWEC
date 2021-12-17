@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>act 2.2</title>
+  </head>
+  <body id="body">
+
+    <h1>Primer Bloque de párrafo</h1>
+    <div id="bloque">
+
+      <p>Este es el primer párrafo</p>
+
+      <p>Este es el segundo párrafo</p>
+
+      <p>Este es el tercer párrafo</p>
+    </div>
+
+    <h1>Segundo Bloque de párrafo</h1>
+    <div id="bloque2">
+      
+      <p>Este es el primer párrafo<span id="resultado"></span></p>
+
+      <p>Este es el segundo párrafo<span id="resultado2"></span></p>
+
+      <p>Este es el tercer párrafo<span id="resultado3"></span></p>
+    </div>
+
+    <button type="button" onclick="puntos()">
+      Agregar un punto al final de cada parrafo
+    </button>
+
+  </body>
+  <script >
+  function puntos(){
+    let num2 = document.getElementsByTagName("p");
+    document.querySelector("#resultado").innerHTML=".";
+    document.querySelector("#resultado2").innerHTML=".";
+    document.querySelector("#resultado3").innerHTML=".";
+  }
+
+</script>
+</html>
