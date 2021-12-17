@@ -1,4 +1,0 @@
-prompt("Hola Mundo");
-
-
-
