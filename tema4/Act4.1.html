@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4.1</title>
+</head>
+<body>
+  
+  <ul id="idParrafos">
+    <li > Primer elemento</li>
+    <li> Segundo elemento</li>
+  </ul>
+  
+  <form id="idForm" name="Formulario">      
+    </br>
+    <input type="button" value="InsertarAleatorio" onclick="InsertarAleatorio()">
+  </form>
+
+</body>
+<script>
+  /**
+  *  Añadir un párrafo(con contenido)
+  */
+  function InsertarAleatorio(){
+    // Creamos el párrafo y contenido
+    let nuevop = document.createElement('li'); 
+
+    let contenidop = document.createTextNode("Nuevo elemento:" +Math.random());
+
+    let contenedor = document.getElementById("idParrafos")
+    
+    // añadimos el contenido al párrafo
+    nuevop.appendChild(contenidop)
+    //Añadimos el párrafo al documento
+    contenedor.appendChild(nuevop)
+  }
+</script> 
+</html>

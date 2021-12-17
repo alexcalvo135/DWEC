@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4.2</title>
+</head>
+<body>
+  
+  <div>
+    <p>Lista de la compra</p>
+    <ul id="listado">
+      <li>Azúcar</li>
+      <li>Cerveza</li>
+      <li>Pan</li>
+      <li>Patatas</li>
+    </ul>
+    <label>
+      <input type="text" name="lista" id="lista"><br>
+      <input type="button" value="Añadir" onclick="lista()">
+  </label>
+  </div>
+</body>
+
+<script>
+  /**
+  *  Añadir un párrafo(con contenido)
+  */
+  function lista(){
+    var lis=['Azúcar','Cerveza','Pan','Patatas'];
+    var list = document.getElementById("lista").value;
+    let a=lis.push(list);
+    a.sort();
+    let li = document.createElement('li');  
+    let contenido=document.createTextNode(v);
+      
+    let contenedor = document.getElementById("listado");
+
+    li.appendChild(contenido);
+    contenedor.appendChild(li);
+  }
+</script> 
+</html>
